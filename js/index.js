@@ -34,4 +34,7 @@ header.addEventListener("mouseover", function(event) {
     });
   }
 
-
+  go.addEventListener("click", function(event) {
+    let img = document.querySelector(".img-content");
+    img.classList.toggle("rotate");
+  });
