@@ -38,3 +38,14 @@ header.addEventListener("mouseover", function(event) {
     let img = document.querySelector(".img-content");
     img.classList.toggle("rotate");
   });
+  //Add event: Add opacity to background images
+images.forEach(function(img) {
+    img.addEventListener("mouseenter", function(item) {
+      img.style.opacity = ".3";
+    });
+  
+    img.addEventListener("mouseleave", function(item) {
+      img.style.opacity = "1";
+    });
+  });
+  
