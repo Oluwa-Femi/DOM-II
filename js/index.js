@@ -1,8 +1,11 @@
 // Your code goes here
-//Select fun bus logo
+//Select elements
 let logo = document.querySelector(".logo-heading");
-// Add event, enlarge logo on mouse over
-logo.addEventListener("mouseover", event => {
-    logo.style.fontSize = "50px";
-  });
-  addHover(logo);
+
+//Add event: make logo larger on mouseover and addHover
+logo.addEventListener("click", event => {
+  logo.style.fontSize = "60px";
+});
+addHover(logo);
+
+
