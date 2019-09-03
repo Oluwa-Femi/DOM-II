@@ -60,3 +60,7 @@ window.addEventListener("scroll", function(event) {
   }
 });
 
+//Add event: Resize effect and alert
+window.addEventListener("resize", function(event) {
+    alert("This will fit your screen spec more!");
+  });
