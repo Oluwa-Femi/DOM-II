@@ -5,10 +5,15 @@ let logo = document.querySelector(".logo-heading");
 let headers = document.querySelector(".intro h2");
 let input = document.querySelector(".input");
 let navItems = document.querySelectorAll(".nav-link");
+let go = document.querySelector(".text-content h2");
+let images = document.querySelectorAll("img");
+console.log(images);
+let fontColor = "#212529";
+let buttons = document.querySelectorAll(".btn");
 
 //Add event: Enlarge logo
 logo.addEventListener("click", event => {
-  logo.style.fontSize = "60px";
+  logo.style.fontSize = "50px";
 });
 addHover(logo);
 //Add event : mouse over links and image on header
@@ -17,6 +22,7 @@ header.addEventListener("mouseover", function(event) {
   });
   
   //Add event : mouseenter + mouse leave , prevent click
+  
   navItems.forEach(function(item) {
     addHover(item);
     item.addEventListener("click", function(event) {
@@ -76,4 +82,3 @@ buttons.forEach(function(btn) {
       alert("A member of our team will reach out to you");
     });
   });
-  
