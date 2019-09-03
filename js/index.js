@@ -70,3 +70,10 @@ window.addEventListener("load", function(event) {
     console.log("Welcome!");
   });
   
+  // Add event: Contact click
+buttons.forEach(function(btn) {
+    btn.addEventListener("click", function(event) {
+      alert("A member of our team will reach out to you");
+    });
+  });
+  
