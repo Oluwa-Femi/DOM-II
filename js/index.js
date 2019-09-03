@@ -49,3 +49,14 @@ images.forEach(function(img) {
     });
   });
   
+// Add event: scroll
+let counter = 0;
+window.addEventListener("scroll", function(event) {
+  console.log("scroll!");
+  counter++;
+  if (counter > 200) {
+    alert("Hey! Hol up! Scroll up");
+    counter = 0;
+  }
+});
+
