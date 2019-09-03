@@ -64,3 +64,9 @@ window.addEventListener("scroll", function(event) {
 window.addEventListener("resize", function(event) {
     alert("This will fit your screen spec more!");
   });
+
+  //Add event: load
+window.addEventListener("load", function(event) {
+    console.log("Welcome!");
+  });
+  
